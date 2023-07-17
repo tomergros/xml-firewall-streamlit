@@ -35,7 +35,7 @@ def main():
     st.title("Kaggle Notebook Viewer")
 
     # Hard coded Kaggle notebook URL
-    kaggle_notebook_url = "https://www.kaggle.com/code/tomergrossy/xml-firewall-cyber-attacks-classification"
+    kaggle_notebook_url = "https://www.kaggle.com/code/tomergrossy/xml-firewall-cyber-attacks-classification/"
 
     try:
         notebook_content = fetch_kaggle_notebook_content(kaggle_notebook_url)
