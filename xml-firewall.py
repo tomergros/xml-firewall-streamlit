@@ -1,5 +1,4 @@
 import streamlit as st
-from IPython.display import IFrame
 
 def main():
     st.title("Kaggle Notebook Viewer")
@@ -9,10 +8,7 @@ def main():
 
     # Display the Kaggle notebook
     st.markdown(f"XML- Firewall: Cyber Attacks Classification")
-    st.markdown(
-        f'<iframe src="{notebook_url}" width="800" height="600" frameborder="0"></iframe>',
-        unsafe_allow_html=True
-    )
+    st.components.v1.html(f'<iframe src="{notebook_url}" width="800" height="600" frameborder="0"></iframe>', height=600)
 
 if __name__ == '__main__':
     main()
