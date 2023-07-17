@@ -3,9 +3,12 @@ import urllib.request
 import json
 
 def fetch_kaggle_notebook_content(kaggle_notebook_url):
-    with urllib.request.urlopen(kaggle_notebook_url) as response:
-        notebook_content = json.load(response)
-    return notebook_content
+    try:
+        with urllib.request.urlopen(kaggle_notebook_url) as response:
+            notebook_content = json.load(response)
+        return notebook_content
+    except Exception as e:
+        raise ValueError("Failed to fetch Kaggle notebook content") from e
 
 def display_kaggle_notebook_content(cells):
     for cell in cells:
@@ -38,8 +41,10 @@ def main():
         notebook_content = fetch_kaggle_notebook_content(kaggle_notebook_url)
         cells = notebook_content["cells"]
         display_kaggle_notebook_content(cells)
+    except ValueError as ve:
+        st.error(str(ve))
     except Exception as e:
-        st.error(f"Error: {e}")
+        st.error("An unexpected error occurred.")
 
 if __name__ == "__main__":
     main()
