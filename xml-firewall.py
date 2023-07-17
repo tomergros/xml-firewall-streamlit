@@ -12,7 +12,7 @@ def main():
     st.title("XML- Firewall: Cyber Attacks Classification")
 
     # Hardcoded Kaggle notebook ID
-    notebook_id = 'xml-firewall-cyber-attacks-classification'
+    notebook_id = '136941707'
 
     # Fetch the Kaggle notebook content
     notebook_data = fetch_kaggle_notebook(notebook_id)
