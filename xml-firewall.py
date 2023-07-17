@@ -1,41 +1,32 @@
 import streamlit as st
-import nbformat
-from nbconvert import MarkdownExporter
-import os
-import kaggle
+import requests
 
-def convert_ipynb_to_md(notebook_path):
-    nb = nbformat.read(notebook_path, as_version=4)
-    exporter = MarkdownExporter()
-    md, _ = exporter.from_notebook_node(nb)
-    return md
-
-def download_kaggle_notebook(username, notebook_id):
-    os.makedirs('kaggle_notebooks', exist_ok=True)
-    kaggle.api.dataset_download_files(f'{username}/kaggle-notebook-{notebook_id}', path='kaggle_notebooks', unzip=True)
-    files = os.listdir('kaggle_notebooks')
-    for file in files:
-        if file.endswith('.ipynb'):
-            return f'kaggle_notebooks/{file}'
+def fetch_kaggle_notebook(notebook_id):
+    url = f"https://www.kaggleusercontent.com/api/notebooks/{notebook_id}/export?format=json"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
     return None
 
 def main():
-    st.title("Kaggle Notebook Viewer")
+    st.title("XML- Firewall: Cyber Attacks Classification")
 
-    # Hardcoded Kaggle username and notebook ID
-    username = 'tomergrossy'
+    # Hardcoded Kaggle notebook ID
     notebook_id = 'xml-firewall-cyber-attacks-classification'
-    # Download the Kaggle notebook
-    notebook_path = download_kaggle_notebook(username, notebook_id)
 
-    if notebook_path:
-        # Convert the notebook to Markdown
-        md_content = convert_ipynb_to_md(notebook_path)
+    # Fetch the Kaggle notebook content
+    notebook_data = fetch_kaggle_notebook(notebook_id)
 
-        # Render the Markdown content
-        st.markdown(md_content)
+    if notebook_data:
+        # Display the notebook code
+        code_blocks = notebook_data["cells"]
+        for code_block in code_blocks:
+            if code_block["cell_type"] == "code":
+                code_lines = code_block["source"]
+                code = "\n".join(code_lines)
+                st.code(code, language="python")
     else:
-        st.error("Notebook not found. Please check your Kaggle username and notebook ID.")
+        st.error("Notebook not found. Please check the notebook ID.")
 
 if __name__ == '__main__':
     main()
