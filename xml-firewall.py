@@ -1,14 +1,10 @@
 import streamlit as st
 
 def main():
-    st.title("Kaggle Notebook Viewer")
-
-    # Hardcoded Kaggle notebook URL
-    notebook_url = 'https://www.kaggle.com/code/tomergrossy/xml-firewall-cyber-attacks-classification'
-
-    # Display the Kaggle notebook
-    st.markdown(f"XML- Firewall: Cyber Attacks Classification")
-    st.components.v1.html(f'<iframe src="{notebook_url}" width="800" height="600" frameborder="0"></iframe>', height=600)
-
+    st.title('xml-firewall-cyber-attacks-classification')
+    
+    # Add an iframe to display the Kaggle notebook
+    st.components.v1.iframe("ttps://www.kaggle.com/code/tomergrossy/xml-firewall-cyber-attacks-classification", height=1000)
+    
 if __name__ == '__main__':
     main()
