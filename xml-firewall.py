@@ -55,7 +55,10 @@ def main():
     st.markdown("<p class='upload-title'>Upload XSD File</p>", unsafe_allow_html=True)
     xsd_file = st.file_uploader("", type=["xsd"])
 
-    st.markdown("<p class='upload-title'>Upload XML File</p>", unsafe_allow_html=True)
+    st.markdown("<p class='upload-title' style='text-align: center; font-size: 40px;'>Upload XSD File</p>", unsafe_allow_html=True)
+    xsd_file = st.file_uploader("", type=["xsd"])
+
+    st.markdown("<p class='upload-title' style='text-align: center; font-size: 40px;'>Upload XML File</p>", unsafe_allow_html=True)
     xml_file = st.file_uploader("", type=["xml"])
 
     if st.button("Validate"):
