@@ -49,11 +49,11 @@ def main():
         st.error("An error occurred while loading the Kaggle notebook HTML content.")
 
     # XML Firewall
-    st.title("XML Firewall")
+    # st.title("XML Firewall")
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>XML Firewall</h1>", unsafe_allow_html=True)
 
-    xsd_file = st.file_uploader("**Upload XSD File**", type=["xsd"])
-    xml_file = st.file_uploader("**Upload XML File**", type=["xml"])
+    xsd_file = st.file_uploader("<h3 style='font-size: 20px;'>Upload XSD File</h3>", type=["xsd"], unsafe_allow_html=True)
+    xml_file = st.file_uploader("<h3 style='font-size: 20px;'>Upload XML File</h3>", type=["xml"], unsafe_allow_html=True)
 
     if st.button("Validate"):
         if not xsd_file or not xml_file:
