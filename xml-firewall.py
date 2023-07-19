@@ -1,32 +1,42 @@
 import streamlit as st
 import xmlschema
 
-# Customizing Streamlit app settings
-st.set_page_config(
-    page_title="xml-firewall",
-    page_icon=":Rocket:",
-    layout="wide",  # You can use 'centered', 'wide', or 'dashboard'
-)
-
-
-def validate_xml(xsd_path, xml_path):
+def validate_xml(xsd_content, xml_content):
     try:
-        xsd = xmlschema.XMLSchema(xsd_path)
-        if xsd.is_valid(xml_path):
+        xsd = xmlschema.XMLSchema(xsd_content)
+        if xsd.is_valid(xml_content):
             st.success("XML is valid")
         else:
             try:
-                xsd.validate(xml_path)
+                xsd.validate(xml_content)
             except Exception as e:
                 st.error("XML is not valid: " + str(e))
     except Exception as r:
         st.error("An error occurred during XML validation: " + str(r))
 
 def main():
+    st.set_page_config(
+        page_title="xml-firewall",
+        page_icon=":Rocket:",
+        layout="wide",
+    )
+
+    # Centering the titles
+    st.markdown(
+        """
+        <style>
+        .title {
+            text-align: center;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     st.title("Kaggle Notebook Viewer and XML Firewall")
 
     # Kaggle Notebook Viewer
-    st.markdown("<h1 style='color: #ff6347;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color: #ff6347; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
     html_file_path = r"xml-firewall-cyber-attacks-classification.html"
     try:
         with open(html_file_path, "r", encoding="utf-8") as file:
@@ -40,8 +50,8 @@ def main():
     # XML Firewall
     st.title("XML Firewall")
 
-    xsd_file = st.file_uploader("Upload XSD File", type=["xsd"])
-    xml_file = st.file_uploader("Upload XML File", type=["xml"])
+    xsd_file = st.file_uploader("**Upload XSD File**", type=["xsd"])
+    xml_file = st.file_uploader("**Upload XML File**", type=["xml"])
 
     if st.button("Validate"):
         if not xsd_file or not xml_file:
