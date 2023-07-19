@@ -1,50 +1,20 @@
 import streamlit as st
-import urllib.request
-import json
-
-def fetch_kaggle_notebook_content(kaggle_notebook_url):
-    try:
-        with urllib.request.urlopen(kaggle_notebook_url) as response:
-            notebook_content = json.load(response)
-        return notebook_content
-    except Exception as e:
-        raise ValueError("Failed to fetch Kaggle notebook content") from e
-
-def display_kaggle_notebook_content(cells):
-    for cell in cells:
-        cell_type = cell["cell_type"]
-
-        if cell_type == "code":
-            # Display code cells
-            code = cell["source"]
-            st.code("\n".join(code))
-
-        elif cell_type == "markdown":
-            # Display markdown cells
-            markdown = cell["source"]
-            st.markdown("\n".join(markdown))
-
-        elif cell_type == "output":
-            # Display output cells
-            output = cell["output_type"]
-            st.write(output)
-
-        # Add additional logic for other cell types if needed
+import codecs
 
 def main():
     st.title("Kaggle Notebook Viewer")
 
-    # Hard coded Kaggle notebook URL
-    kaggle_notebook_url = "https://www.kaggle.com/code/tomergrossy/xml-firewall-cyber-attacks-classification/"
+    # Path to the downloaded HTML file
+    html_file_path = r"xml-firewall-cyber-attacks-classification.html"
 
     try:
-        notebook_content = fetch_kaggle_notebook_content(kaggle_notebook_url)
-        cells = notebook_content["cells"]
-        display_kaggle_notebook_content(cells)
-    except ValueError as ve:
-        st.error(str(ve))
+        with codecs.open(html_file_path, "r", encoding="utf-8") as file:
+            html_content = file.read()
+        st.components.v1.html(html_content, height=1000, scrolling=True)
+    except FileNotFoundError:
+        st.error("HTML file not found. Please provide the correct file path.")
     except Exception as e:
-        st.error("An unexpected error occurred.")
+        st.error(f"An error occurred: {e}")
 
 if __name__ == "__main__":
     main()
