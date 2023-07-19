@@ -52,8 +52,8 @@ def main():
     # st.title("XML Firewall")
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>XML Firewall</h1>", unsafe_allow_html=True)
 
-    xsd_file = st.file_uploader("<h3 style='font-size: 50px;'>Upload XSD File</h3>", type=["xsd"], unsafe_allow_html=True)
-    xml_file = st.file_uploader("<h3 style='font-size: 50px;'>Upload XML File</h3>", type=["xml"], unsafe_allow_html=True)
+    xsd_file = st.file_uploader("<h3 style='font-size: 40px;'>Upload XSD File</h3>", type=["xsd"], unsafe_allow_html=True)
+    xml_file = st.file_uploader("<h3 style='font-size: 40px;'>Upload XML File</h3>", type=["xml"], unsafe_allow_html=True)
 
     if st.button("Validate"):
         if not xsd_file or not xml_file:
