@@ -73,7 +73,7 @@ def main():
     # Center the "Validate" button
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        if st.button("Validate", key="validate-button", class="validate-button"):
+        if st.button("Validate", key="validate-button", container_style={"display": "flex", "justify-content": "center", "width": "250px"}):
             if not xsd_file or not xml_file:
                 st.warning("Please upload both XSD and XML files.")
             else:
