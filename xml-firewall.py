@@ -70,19 +70,22 @@ def main():
     xml_file = st.file_uploader("", type=["xml"])
 
     # st.markdown("<div class='center' style='text-align: center; font-size: 30px;'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
+    
     # Center the "Validate" button
-    st.markdown("<div class='center'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
-    if st.button("", key="validate-button", class_=["validate-button"]):
-        if not xsd_file or not xml_file:
-            st.warning("Please upload both XSD and XML files.")
-        else:
-            try:
-                xsd_content = xsd_file.read()
-                xml_content = xml_file.read()
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.markdown("<div class='center'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
+        if st.button("", key="validate-button", container_style={"display": "flex", "justify-content": "center"}):
+            if not xsd_file or not xml_file:
+                st.warning("Please upload both XSD and XML files.")
+            else:
+                try:
+                    xsd_content = xsd_file.read()
+                    xml_content = xml_file.read()
 
-                validate_xml(xsd_content, xml_content)
-            except Exception as e:
-                st.error("An error occurred during XML validation: " + str(e))
+                    validate_xml(xsd_content, xml_content)
+                except Exception as e:
+                    st.error("An error occurred during XML validation: " + str(e))
 
 
 if __name__ == "__main__":
