@@ -33,7 +33,8 @@ def main():
         unsafe_allow_html=True,
     )
 
-    st.title("Kaggle Notebook Viewer and XML Firewall")
+    # st.title("Kaggle Notebook Viewer and XML Firewall")
+    st.markdown("<h1 style='color: #ffffff; text-align: center;'>Kaggle Notebook Viewer and XML Firewall</h1>", unsafe_allow_html=True)
 
     # Kaggle Notebook Viewer
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
@@ -49,6 +50,7 @@ def main():
 
     # XML Firewall
     st.title("XML Firewall")
+    st.markdown("<h1 style='color: #ff6347; text-align: center;'>XML Firewall</h1>", unsafe_allow_html=True)
 
     xsd_file = st.file_uploader("**Upload XSD File**", type=["xsd"])
     xml_file = st.file_uploader("**Upload XML File**", type=["xml"])
