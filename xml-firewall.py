@@ -95,7 +95,7 @@ def main():
     # st.markdown("<div class='center' style='text-align: center; font-size: 30px;'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
     
     # Center the "Validate" button
-    st.markdown("<div class='center'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
+    # st.markdown("<div class='center'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
     if st.button("", key="validate-button"):
         if not xsd_file or not xml_file:
             st.warning("Please upload both XSD and XML files.")
