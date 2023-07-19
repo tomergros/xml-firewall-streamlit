@@ -52,9 +52,6 @@ def main():
     # st.title("XML Firewall")
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>XML Firewall</h1>", unsafe_allow_html=True)
 
-    st.markdown("<p class='upload-title'>Upload XSD File</p>", unsafe_allow_html=True)
-    xsd_file = st.file_uploader("", type=["xsd"])
-
     st.markdown("<p class='upload-title' style='text-align: center; font-size: 40px;'>Upload XSD File</p>", unsafe_allow_html=True)
     xsd_file = st.file_uploader("", type=["xsd"])
 
