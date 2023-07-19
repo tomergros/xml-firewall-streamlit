@@ -1,6 +1,14 @@
 import streamlit as st
 import xmlschema
 
+# Customizing Streamlit app settings
+st.set_page_config(
+    page_title="xml-firewall",
+    page_icon=":smiley:",
+    layout="wide",  # You can use 'centered', 'wide', or 'dashboard'
+)
+
+
 def validate_xml(xsd_path, xml_path):
     try:
         xsd = xmlschema.XMLSchema(xsd_path)
