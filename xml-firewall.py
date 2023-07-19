@@ -4,7 +4,7 @@ import xmlschema
 # Customizing Streamlit app settings
 st.set_page_config(
     page_title="xml-firewall",
-    page_icon=":smiley:",
+    page_icon=":Whatshot:",
     layout="wide",  # You can use 'centered', 'wide', or 'dashboard'
 )
 
