@@ -34,11 +34,11 @@ def main():
         .center {
             display: flex;
             justify-content: center;
-        }
-        .validate-button {
-            font-size: 24px;
-            padding: 12px 30px;
-        }
+        # }
+        # .validate-button {
+        #     font-size: 24px;
+        #     padding: 12px 30px;
+        # }
         </style>
         """,
         unsafe_allow_html=True,
@@ -69,7 +69,7 @@ def main():
     st.markdown("<p class='upload-title' style='text-align: center; font-size: 30px;'>Upload XML File</p>", unsafe_allow_html=True)
     xml_file = st.file_uploader("", type=["xml"])
 
-    st.markdown("<div class='center'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
+    st.markdown("<div class='center' style='text-align: center; font-size: 30px;'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
 
     if st.button("Validate"):
         if not xsd_file or not xml_file:
