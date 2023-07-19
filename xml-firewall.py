@@ -48,7 +48,7 @@ def main():
 
     # Kaggle Notebook Viewer
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
-    html_file_path = "xml-firewall-streamlit-main\xml-firewall-cyber-attacks-classification.html"
+    html_file_path = r"xml-firewall-streamlit-main\xml-firewall-cyber-attacks-classification.html"
     try:
         with open(html_file_path, "r", encoding="utf-8") as file:
             html_content = file.read()
