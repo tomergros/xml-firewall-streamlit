@@ -31,14 +31,14 @@ def main():
         .upload-title {
             font-size: 20px;
         }
-        .center {
+        .validate-button {
             display: flex;
             justify-content: center;
-        # }
-        # .validate-button {
-        #     font-size: 24px;
-        #     padding: 12px 30px;
-        # }
+        }
+        .stButton button {
+            font-size: 24px;
+            width: 250px;
+        }
         </style>
         """,
         unsafe_allow_html=True,
@@ -70,18 +70,22 @@ def main():
     xml_file = st.file_uploader("", type=["xml"])
 
     # st.markdown("<div class='center' style='text-align: center; font-size: 30px;'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
+    # Center the "Validate" button
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        if st.button("Validate", key="validate-button", class="validate-button"):
+            if not xsd_file or not xml_file:
+                st.warning("Please upload both XSD and XML files.")
+            else:
+                try:
+                    xsd_content = xsd_file.read()
+                    xml_content = xml_file.read()
 
-    if st.button("Validate"):
-        if not xsd_file or not xml_file:
-            st.warning("Please upload both XSD and XML files.")
-        else:
-            try:
-                xsd_content = xsd_file.read()
-                xml_content = xml_file.read()
+                    validate_xml(xsd_content, xml_content)
+                except Exception as e:
+                    st.error("An error occurred during XML validation: " + str(e))
 
-                validate_xml(xsd_content, xml_content)
-            except Exception as e:
-                st.error("An error occurred during XML validation: " + str(e))
+
 
 if __name__ == "__main__":
     main()
