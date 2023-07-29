@@ -94,7 +94,7 @@ def main():
     #     st.error("An error occurred while loading the Kaggle notebook HTML content.")
 
     # XML Firewall
-    st.markdown('<div style="text-align: center; font-weight: bold;">Basic Instructions</div>', unsafe_allow_html=True)
+    st.markdown('<h1 style="text-align: center; font-weight: bold; font-size: 24px;">Basic Instructions</h1>', unsafe_allow_html=True)
     st.markdown('<div style="text-align: center; font-weight: bold;">1. Click on the arrow to start the app.</div>', unsafe_allow_html=True)
     st.markdown('<div style="text-align: center; font-weight: bold;">2. Browse an XSD file.</div>', unsafe_allow_html=True)
     st.markdown('<div style="text-align: center; font-weight: bold;">3. Browse an XML file.</div>', unsafe_allow_html=True)
