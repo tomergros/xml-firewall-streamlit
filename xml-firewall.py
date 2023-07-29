@@ -69,7 +69,7 @@ def main():
     )
 
     # st.title("Kaggle Notebook Viewer and XML Firewall")
-    st.markdown("<h1 style='color: #ffffff; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color: #ffffff; text-align: center;'>Kaggle Notebook Viewer</h1>")
 
     # Insert the image below the title
     image_path = "xml-firewall-logo.jpg"
