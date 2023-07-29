@@ -77,7 +77,7 @@ def main():
 
     # Replace the URL below with the URL you want to embed
     iframe_url = "https://www.kaggle.com/embed/tomergrossy/xml-firewall-cyber-attacks-classification"
-    iframe_code = f'<iframe src="{iframe_url}" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="XML- Firewall: Cyber Attacks Classification"></iframe>'
+    iframe_code = f'<iframe src="{iframe_url}" height="2000" style="margin: 0 auto; width: 100%; max-width: 2000px;" frameborder="0" scrolling="auto" title="XML- Firewall: Cyber Attacks Classification"></iframe>'
 
     # Kaggle Notebook Viewer
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
