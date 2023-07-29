@@ -76,7 +76,7 @@ def main():
     st.image(image_path, use_column_width=True)
 
     # Replace the URL below with the URL you want to embed
-    iframe_url = "https://www.kaggle.com/embed/tomergrossy/xml-firewall-cyber-attacks-classification?kernelSessionId=136941707"
+    iframe_url = "https://www.kaggle.com/embed/tomergrossy/xml-firewall-cyber-attacks-classification"
     iframe_code = f'<iframe src="{iframe_url}" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="XML- Firewall: Cyber Attacks Classification"></iframe>'
 
     st.write(iframe_code, unsafe_allow_html=True)    
