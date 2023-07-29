@@ -79,18 +79,19 @@ def main():
     iframe_url = "https://www.kaggle.com/embed/tomergrossy/xml-firewall-cyber-attacks-classification"
     iframe_code = f'<iframe src="{iframe_url}" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="XML- Firewall: Cyber Attacks Classification"></iframe>'
 
-    st.write(iframe_code, unsafe_allow_html=True)    
     # Kaggle Notebook Viewer
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
-    html_file_path = r"xml-firewall-cyber-attacks-classification.html"
-    try:
-        with open(html_file_path, "r", encoding="utf-8") as file:
-            html_content = file.read()
-        st.components.v1.html(html_content, height=800, scrolling=True)
-    except FileNotFoundError:
-        st.error("HTML file not found. Please provide the correct file path.")
-    except Exception as e:
-        st.error("An error occurred while loading the Kaggle notebook HTML content.")
+    st.write(iframe_code, unsafe_allow_html=True)    
+
+    # html_file_path = r"xml-firewall-cyber-attacks-classification.html"
+    # try:
+    #     with open(html_file_path, "r", encoding="utf-8") as file:
+    #         html_content = file.read()
+    #     st.components.v1.html(html_content, height=800, scrolling=True)
+    # except FileNotFoundError:
+    #     st.error("HTML file not found. Please provide the correct file path.")
+    # except Exception as e:
+    #     st.error("An error occurred while loading the Kaggle notebook HTML content.")
 
     # XML Firewall
     # st.title("XML Firewall")
