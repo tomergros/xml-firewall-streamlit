@@ -78,7 +78,7 @@ def main():
     # st.title("XML Firewall Project")
     st.markdown("<h1 style='color: #ffffff; text-align: center;'>XML Firewall Project</h1>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Preseted by: Tomer Grossman & Oriel Somech</h5>", unsafe_allow_html=True)
-    st.markdown("<h6 style='color: #ffffff; text-align: center;'>Academic Advisor: Dr. Guy Leshem</h6>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Academic Advisor: Dr. Guy Leshem</h5>", unsafe_allow_html=True)
 
     image_path = "pics/what_is_xml_firewall.png"
     st.image(image_path, use_column_width=True)
