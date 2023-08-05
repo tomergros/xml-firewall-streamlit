@@ -113,7 +113,7 @@ def main():
 
     # XML Firewall
     
-    image_path = "pic/basic_instructions.jpg"
+    image_path = "pics/basic_instructions.jpg"
     st.image(image_path, use_column_width=True) 
     
     # st.markdown('<h1 style="text-align: center; font-weight: bold; font-size: 48px;">Basic Instructions</h1>', unsafe_allow_html=True)
