@@ -68,31 +68,33 @@ def main():
         unsafe_allow_html=True,
     )
 
-    st.sidebar.title("Menu")
-    selected_section = st.sidebar.radio(
-        "Go to:",
-        ["Section 1", "Section 2", "Section 3"]
-    )
-    # Custom JavaScript for smooth scrolling to the selected section
-    scroll_js = f"""
-<script>
-    document.addEventListener("DOMContentLoaded", function() {{
-        var links = document.querySelectorAll("#sidebar a");
-        for (var i = 0; i < links.length; i++) {{
-            links[i].addEventListener("click", function(event) {{
-                event.preventDefault();
-                var targetId = this.getAttribute("href").substring(1);
-                var target = document.getElementById(targetId);
-                var topOffset = target.getBoundingClientRect().top + window.pageYOffset;
-                window.scroll({{top: topOffset, behavior: "smooth"}});
-            }});
-        }}
-    }});
-</script>
-"""
+    
+#     st.sidebar.title("Menu")
+#     selected_section = st.sidebar.radio(
+#         "Go to:",
+#         ["Section 1", "Section 2", "Section 3"]
+#     )
+#     # Custom JavaScript for smooth scrolling to the selected section
+#     scroll_js = f"""
+# <script>
+#     document.addEventListener("DOMContentLoaded", function() {{
+#         var links = document.querySelectorAll("#sidebar a");
+#         for (var i = 0; i < links.length; i++) {{
+#             links[i].addEventListener("click", function(event) {{
+#                 event.preventDefault();
+#                 var targetId = this.getAttribute("href").substring(1);
+#                 var target = document.getElementById(targetId);
+#                 var topOffset = target.getBoundingClientRect().top + window.pageYOffset;
+#                 window.scroll({{top: topOffset, behavior: "smooth"}});
+#             }});
+#         }}
+#     }});
+# </script>
+# """
 
-    # Inject the JavaScript code
-    st.markdown(scroll_js, unsafe_allow_html=True)
+#     # Inject the JavaScript code
+#     st.markdown(scroll_js, unsafe_allow_html=True)
+    
     # Insert the image below the title
     image_path = "pics/top.jpg"
     st.image(image_path, use_column_width=True)
