@@ -124,7 +124,7 @@ def main():
 
     # Video URL or local file path
     video_url = "pics/sqli.mp4"  # Replace this with your video URL or local file path
-    st.video(video_url)
+    st.video(video_url, caption="SQL Injection Example")
 
     image_path = "pics/basic_terms3png.png"
     st.image(image_path, use_column_width=True)
@@ -133,7 +133,7 @@ def main():
     video_url = "pics/DDOS attack on the VideoLAN downloads infrastructure.mp4"  # Replace this with your video URL or local file path
     
     # Display the video
-    st.video(video_url)
+    st.video(video_url, caption="DOS Example")
 
     image_path = "pics/basic_terms4.png"
     st.image(image_path, use_column_width=True)
