@@ -69,17 +69,17 @@ def main():
         unsafe_allow_html=True,
     )
 
-    # 1. as sidebar menu
-    with st.sidebar:
-        selected = option_menu("Section 1", "Section 2") 
-            # icons=['house', 'gear'], menu_icon="cast", default_index=1)
-        selected
+    # # 1. as sidebar menu
+    # with st.sidebar:
+    #     selected = option_menu("Section 1", "Section 2") 
+    #         # icons=['house', 'gear'], menu_icon="cast", default_index=1)
+    #     selected
     
-    # # 2. horizontal menu
-    # selected2 = option_menu(None, ["Section 1", "Section 2"]) 
-    #     # icons=['house', 'cloud-upload', "list-task", 'gear'], 
-    #     # menu_icon="cast", default_index=0, orientation="horizontal")
-    # selected2
+    # 2. horizontal menu
+    selected2 = option_menu(None, ["Section 1", "Section 2"]) 
+        # icons=['house', 'cloud-upload', "list-task", 'gear'], 
+        # menu_icon="cast", default_index=0, orientation="horizontal")
+    selected
     
     if selected == "Section 1":
         st.markdown("<script>window.location.hash = '#section1'</script>", unsafe_allow_html=True)
