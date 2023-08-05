@@ -67,6 +67,9 @@ def main():
         """,
         unsafe_allow_html=True,
     )
+
+    st.sidebar.title("Menu")
+
     # Insert the image below the title
     image_path = "pics/top.jpg"
     st.image(image_path, use_column_width=True)
