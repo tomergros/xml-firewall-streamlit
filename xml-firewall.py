@@ -84,10 +84,19 @@ def main():
     st.image(image_path, use_column_width=True)
 
     image_path = "pics/what_is_xml_firewall2.png"
-    # Display the image with custom size
-    width = 300  # Replace this with the desired width in pixels
-    height = 200  # Replace this with the desired height in pixels
-    st.image(image_path,width = 150)
+
+    # Center the image using st.container
+    col1, col2, col3 = st.columns(3)
+    
+    # The first and last columns act as spacers, while the middle column centers the image
+    with col1:
+        pass
+    
+    with col2:
+        st.image(image_path, caption="XML Firewall Example")
+    
+    with col3:
+        pass
 
     image_path = "pics/purpose.png"
     st.image(image_path, use_column_width=True)
@@ -115,7 +124,8 @@ def main():
 
     # Video URL or local file path
     video_url = "pics/sqli.mp4"  # Replace this with your video URL or local file path
-    
+    st.video(video_url)
+
     image_path = "pics/basic_terms3png.png"
     st.image(image_path, use_column_width=True)
     
