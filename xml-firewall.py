@@ -116,6 +116,7 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
     st.markdown('<a id="section1"></a>', unsafe_allow_html=True)
+    st.title('Section 1')
 
     image_path = "pics/what_is_xml_firewall2.png"
     
