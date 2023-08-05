@@ -160,10 +160,20 @@ def main():
     
     # Video URL or local file path
     video_url = "pics/DDOS attack on the VideoLAN downloads infrastructure.mp4"  # Replace this with your video URL or local file path
-    
+
+    # Mute the video using JavaScript
+    mute_code = """
+    <script>
+    var video = document.getElementsByTagName("video")[0];
+    video.muted = true;
+    </script>
+    """
     # Display the video
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>DOS Example</h5>", unsafe_allow_html=True)
-    st.video(video_url)
+    st.video(video_url, format="video/mp4")
+
+    # Run the JavaScript code to mute the video
+    st.markdown(mute_code, unsafe_allow_html=True)
 
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
