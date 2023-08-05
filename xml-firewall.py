@@ -71,12 +71,12 @@ def main():
 
     # 1. as sidebar menu
     with st.sidebar:
-        selected = option_menu("Section 1", "Section 2"], 
+        selected = option_menu("Section 1", "Section 2") 
             # icons=['house', 'gear'], menu_icon="cast", default_index=1)
         selected
     
     # 2. horizontal menu
-    selected2 = option_menu(None, ["Section 1", "Section 2"], 
+    selected2 = option_menu(None, ["Section 1", "Section 2"]) 
         # icons=['house', 'cloud-upload', "list-task", 'gear'], 
         menu_icon="cast", default_index=0, orientation="horizontal")
     selected2
