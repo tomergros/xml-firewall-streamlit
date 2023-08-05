@@ -80,7 +80,6 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Preseted by: Tomer Grossman & Oriel Somech</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Academic Advisor: Dr. Guy Leshem</h5>", unsafe_allow_html=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -88,7 +87,6 @@ def main():
     image_path = "pics/what_is_xml_firewall.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -108,7 +106,6 @@ def main():
     with col3:
         pass
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -131,7 +128,6 @@ def main():
     
     # st.markdown(f'<p style="text-align:center;" dir="rtl">{background_text}</p>', unsafe_allow_html=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -139,7 +135,6 @@ def main():
     image_path = "pics/basic_terms1.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -147,7 +142,6 @@ def main():
     image_path = "pics/basic_terms2.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -160,7 +154,6 @@ def main():
     image_path = "pics/basic_terms3png.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -172,7 +165,6 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>DOS Example</h5>", unsafe_allow_html=True)
     st.video(video_url)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -180,7 +172,6 @@ def main():
     image_path = "pics/basic_terms4.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -188,7 +179,6 @@ def main():
     image_path = "pics/acdemic_research.png"
     st.image(image_path, use_column_width=True)
     
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -215,7 +205,6 @@ def main():
 
     # XML Firewall
     
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -223,7 +212,6 @@ def main():
     image_path = "pics/basic_instructions.png"
     st.image(image_path, use_column_width=True) 
     
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -262,7 +250,6 @@ def main():
     
     st.markdown("<p class='upload-title' style='text-align: center; font-size: 30px;'></p>", unsafe_allow_html=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -270,7 +257,6 @@ def main():
     image_path = "pics/results1.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -278,7 +264,6 @@ def main():
     image_path = "pics/results2.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -286,7 +271,6 @@ def main():
     image_path = "pics/results3.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -294,7 +278,6 @@ def main():
     image_path = "pics/results4.png"
     st.image(image_path, use_column_width=True)
 
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
