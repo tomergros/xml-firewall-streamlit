@@ -105,7 +105,8 @@ def main():
     iframe_code = f'<iframe src="{iframe_url}" height="2000" style="margin: 0 auto; width: 100%; max-width: 2000px;" frameborder="0" scrolling="auto" title="XML- Firewall: Cyber Attacks Classification"></iframe>'
 
     # Kaggle Notebook Viewer
-    st.markdown("<h1 style='color: #ff6347; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color: #ff6347; text-align: center;'>Kaggle Notebook:</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color: #ff6347; text-align: center;'>Cyber Attacks Classification using DistilBERT</h1>", unsafe_allow_html=True)
     st.write(iframe_code, unsafe_allow_html=True)    
 
 
