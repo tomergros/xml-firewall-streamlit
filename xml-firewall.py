@@ -86,10 +86,10 @@ def main():
         components.html("<a href='#section2'></a>", height=0)
 
     if selected2 == "Section 1":
-        st.markdown("<a href='#section1'></a>", unsafe_allow_html=True) 
+        st.scroll_to(section1) 
     elif selected2 == "Section 2":  
-        st.markdown("<a href='#section2'></a>", unsafe_allow_html=True)
-    
+        st.scroll_to(section2)
+
     # Insert the image below the title
     image_path = "pics/top.jpg"
     st.image(image_path, use_column_width=True)
@@ -114,10 +114,11 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
-    st.markdown("<a id='section1'></a>", unsafe_allow_html=True) 
+    section1 = st.container()
 
     image_path = "pics/what_is_xml_firewall2.png"
-    st.markdown("<a id='section2'></a>", unsafe_allow_html=True) 
+    
+    section2 = st.container()
 
     # Center the image using st.container
     col1, col2, col3 = st.columns(3)
