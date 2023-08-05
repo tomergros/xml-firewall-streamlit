@@ -74,6 +74,9 @@ def main():
     image_path = "xml-firewall-logo.jpg"
     st.image(image_path, use_column_width=True)
 
+    image_path = "pics/what_is_xml_firewall.png"
+    st.image(image_path, use_column_width=True)
+    
     # st.title("Kaggle Notebook Viewer and XML Firewall")
     st.markdown("<h1 style='color: #ffffff; text-align: center;'>XML Firewall Project</h1>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Preseted by: Tomer Grossman & Oriel Somech</h5>", unsafe_allow_html=True)
@@ -152,7 +155,8 @@ def main():
                 validate_xml(xsd_content, xml_content)
             except Exception as e:
                 st.error("An error occurred during XML validation: " + str(e))
-
+    
+    st.markdown("<p class='upload-title' style='text-align: center; font-size: 30px;'></p>", unsafe_allow_html=True)
     image_path = "pics/meet_the_team.jpg"
     st.image(image_path, use_column_width=True)
  
