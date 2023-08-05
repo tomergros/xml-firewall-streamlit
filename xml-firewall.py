@@ -1,4 +1,5 @@
 import streamlit as st
+from IPython.display import HTML
 import xmlschema
 
 def validate_xml(xsd_content, xml_content):
