@@ -82,9 +82,9 @@ def main():
     selected
     
     if selected == "Section 1":
-        st.markdown("<script>window.location.hash = '#section1'</script>", unsafe_allow_html=True)
+        st.markdown("<a href='#section1'></a>", unsafe_allow_html=True)
     elif selected == "Section 2":  
-        st.markdown("<script>window.location.hash = '#section2'</script>", unsafe_allow_html=True)
+        st.markdown("<a href='#section2'></a>", unsafe_allow_html=True)
 
     # if selected2 == "Section 1":
     #     st.markdown("<script>document.querySelector('#section1').scrollIntoView();</script>", unsafe_allow_html=True)
