@@ -87,7 +87,7 @@ def main():
     # Display the image with custom size
     width = 300  # Replace this with the desired width in pixels
     height = 200  # Replace this with the desired height in pixels
-    st.image(image_path)
+    st.image(image_path,width = 150)
 
     image_path = "pics/purpose.png"
     st.image(image_path, use_column_width=True)
