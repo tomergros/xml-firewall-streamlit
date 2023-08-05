@@ -67,6 +67,9 @@ def main():
         """,
         unsafe_allow_html=True,
     )
+    # Insert the image below the title
+    image_path = "pics/top.jpg"
+    st.image(image_path, use_column_width=True)
 
     image_path = "xml-firewall-logo.jpg"
     st.image(image_path, use_column_width=True)
@@ -76,9 +79,6 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Preseted by: Tomer Grossman & Oriel Somech</h5>", unsafe_allow_html=True)
     st.markdown("<h6 style='color: #ffffff; text-align: center;'>Academic Advisor: Dr. Guy Leshem</h6>", unsafe_allow_html=True)
 
-    # Insert the image below the title
-    image_path = "pics/top.jpg"
-    st.image(image_path, use_column_width=True)
 
     # # Section 1
     # st.markdown('<h2 style="text-align:center;">רקע</h2>', unsafe_allow_html=True)
