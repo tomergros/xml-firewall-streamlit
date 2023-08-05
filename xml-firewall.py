@@ -80,9 +80,19 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Preseted by: Tomer Grossman & Oriel Somech</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Academic Advisor: Dr. Guy Leshem</h5>", unsafe_allow_html=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/what_is_xml_firewall.png"
     st.image(image_path, use_column_width=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/what_is_xml_firewall2.png"
 
     # Center the image using st.container
@@ -98,6 +108,11 @@ def main():
     with col3:
         pass
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/purpose.png"
     st.image(image_path, use_column_width=True)
 
@@ -116,12 +131,27 @@ def main():
     
     # st.markdown(f'<p style="text-align:center;" dir="rtl">{background_text}</p>', unsafe_allow_html=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/basic_terms1.png"
     st.image(image_path, use_column_width=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/basic_terms2.png"
     st.image(image_path, use_column_width=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     # Video URL or local file path
     video_url = "pics/sqli.mp4"  # Replace this with your video URL or local file path
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>SQL Injection Example</h5>", unsafe_allow_html=True)
@@ -130,6 +160,11 @@ def main():
     image_path = "pics/basic_terms3png.png"
     st.image(image_path, use_column_width=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     # Video URL or local file path
     video_url = "pics/DDOS attack on the VideoLAN downloads infrastructure.mp4"  # Replace this with your video URL or local file path
     
@@ -137,11 +172,26 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>DOS Example</h5>", unsafe_allow_html=True)
     st.video(video_url)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/basic_terms4.png"
     st.image(image_path, use_column_width=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/acdemic_research.png"
     st.image(image_path, use_column_width=True)
+    
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
     # Replace the URL below with the URL you want to embed
     iframe_url = "https://www.kaggle.com/embed/tomergrossy/xml-firewall-cyber-attacks-classification"
@@ -165,8 +215,18 @@ def main():
 
     # XML Firewall
     
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/basic_instructions.png"
     st.image(image_path, use_column_width=True) 
+    
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
     # st.markdown('<h1 style="text-align: center; font-weight: bold; font-size: 48px;">Basic Instructions</h1>', unsafe_allow_html=True)
     # st.markdown('<div style="text-align: center; font-weight: bold;">1. Click on the arrow to start the app.</div>', unsafe_allow_html=True)
@@ -202,17 +262,42 @@ def main():
     
     st.markdown("<p class='upload-title' style='text-align: center; font-size: 30px;'></p>", unsafe_allow_html=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/results1.png"
     st.image(image_path, use_column_width=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/results2.png"
     st.image(image_path, use_column_width=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/results3.png"
     st.image(image_path, use_column_width=True)
 
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    
     image_path = "pics/results4.png"
     st.image(image_path, use_column_width=True)
+
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
     image_path = "pics/meet_the_team.jpg"
     st.image(image_path, use_column_width=True)
