@@ -69,6 +69,10 @@ def main():
     )
 
     st.sidebar.title("Menu")
+    selected_section = st.sidebar.radio(
+        "Go to:",
+        ["Section 1", "Section 2", "Section 3"]
+    )
 
     # Insert the image below the title
     image_path = "pics/top.jpg"
