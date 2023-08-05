@@ -86,9 +86,9 @@ def main():
         st.markdown("<script>document.querySelector('#section2').scrollIntoView();</script>", unsafe_allow_html=True)  
 
     if selected2 == "Section 1":
-        st.scroll_to(section1) 
+        st.markdown("<script>document.querySelector('#section1').scrollIntoView();</script>", unsafe_allow_html=True)
     elif selected2 == "Section 2":  
-        st.scroll_to(section2)
+        st.markdown("<script>document.querySelector('#section2').scrollIntoView();</script>", unsafe_allow_html=True)  
 
     # Insert the image below the title
     image_path = "pics/top.jpg"
