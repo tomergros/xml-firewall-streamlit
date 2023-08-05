@@ -83,6 +83,12 @@ def main():
     image_path = "pics/what_is_xml_firewall.png"
     st.image(image_path, use_column_width=True)
 
+    image_path = "pics/what_is_xml_firewall2.png"
+    st.image(image_path, use_column_width=True)
+
+    image_path = "pics/purpose.png"
+    st.image(image_path, use_column_width=True)
+
     # # Section 1
     # st.markdown('<h2 style="text-align:center;">רקע</h2>', unsafe_allow_html=True)
     
@@ -98,7 +104,29 @@ def main():
     
     # st.markdown(f'<p style="text-align:center;" dir="rtl">{background_text}</p>', unsafe_allow_html=True)
 
+    image_path = "pics/basic_terms1.png"
+    st.image(image_path, use_column_width=True)
 
+    image_path = "pics/basic_terms2.png"
+    st.image(image_path, use_column_width=True)
+
+    # Video URL or local file path
+    video_url = "pics/sqli.mp4"  # Replace this with your video URL or local file path
+    
+    image_path = "pics/basic_terms3png.png"
+    st.image(image_path, use_column_width=True)
+    
+    # Video URL or local file path
+    video_url = "pics/DDOS attack on the VideoLAN downloads infrastructure.mp4"  # Replace this with your video URL or local file path
+    
+    # Display the video
+    st.video(video_url)
+
+    image_path = "pics/basic_terms4.png"
+    st.image(image_path, use_column_width=True)
+
+    image_path = "pics/acdemic_research.png"
+    st.image(image_path, use_column_width=True)
     
     # Replace the URL below with the URL you want to embed
     iframe_url = "https://www.kaggle.com/embed/tomergrossy/xml-firewall-cyber-attacks-classification"
@@ -158,6 +186,19 @@ def main():
                 st.error("An error occurred during XML validation: " + str(e))
     
     st.markdown("<p class='upload-title' style='text-align: center; font-size: 30px;'></p>", unsafe_allow_html=True)
+
+    image_path = "pics/results1.png"
+    st.image(image_path, use_column_width=True)
+
+    image_path = "pics/results2.png"
+    st.image(image_path, use_column_width=True)
+
+    image_path = "pics/results3.png"
+    st.image(image_path, use_column_width=True)
+
+    image_path = "pics/results4.png"
+    st.image(image_path, use_column_width=True)
+    
     image_path = "pics/meet_the_team.jpg"
     st.image(image_path, use_column_width=True)
  
