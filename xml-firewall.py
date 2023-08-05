@@ -118,7 +118,7 @@ def main():
 
     # XML Firewall
     
-    image_path = "pics/basic_instructions.jpg"
+    image_path = "pics/basic_instructions.png"
     st.image(image_path, use_column_width=True) 
     
     # st.markdown('<h1 style="text-align: center; font-weight: bold; font-size: 48px;">Basic Instructions</h1>', unsafe_allow_html=True)
@@ -156,7 +156,7 @@ def main():
     image_path = "pics/meet_the_team.jpg"
     st.image(image_path, use_column_width=True)
  
-    image_path = "pics/bottom.jpg"
+    image_path = "pics/bottom.png"
     st.image(image_path, use_column_width=True)
 
 if __name__ == "__main__":
