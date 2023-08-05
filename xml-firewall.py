@@ -78,7 +78,7 @@ def main():
     # 2. horizontal menu
     selected2 = option_menu(None, ["Section 1", "Section 2"]) 
         # icons=['house', 'cloud-upload', "list-task", 'gear'], 
-        menu_icon="cast", default_index=0, orientation="horizontal")
+        # menu_icon="cast", default_index=0, orientation="horizontal")
     selected2
     if selected == "Section 1":
         components.html("<a href='#section1'></a>", height=0)
