@@ -73,7 +73,25 @@ def main():
         "Go to:",
         ["Section 1", "Section 2", "Section 3"]
     )
+    # Custom JavaScript for smooth scrolling to the selected section
+    scroll_js = f"""
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {{
+            var links = document.querySelectorAll("#sidebar a");
+            for (var i = 0; i < links.length; i++) {{
+                links[i].addEventListener("click", function(event) {{
+                    event.preventDefault();
+                    var target = document.querySelector(this.getAttribute("href"));
+                    var topOffset = target.getBoundingClientRect().top + window.pageYOffset;
+                    window.scroll({{top: topOffset, behavior: "smooth"}});
+                }});
+            }}
+        }});
+    </script>
+    """
 
+    # Inject the JavaScript code
+    st.markdown(scroll_js, unsafe_allow_html=True)
     # Insert the image below the title
     image_path = "pics/top.jpg"
     st.image(image_path, use_column_width=True)
@@ -137,14 +155,14 @@ def main():
 
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 id='section1'; style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
     image_path = "pics/basic_terms1.png"
     st.image(image_path, use_column_width=True)
 
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 id='section2';style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
     image_path = "pics/basic_terms2.png"
     st.image(image_path, use_column_width=True)
