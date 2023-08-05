@@ -75,20 +75,21 @@ def main():
             # icons=['house', 'gear'], menu_icon="cast", default_index=1)
         selected
     
-    # 2. horizontal menu
-    selected2 = option_menu(None, ["Section 1", "Section 2"]) 
-        # icons=['house', 'cloud-upload', "list-task", 'gear'], 
-        # menu_icon="cast", default_index=0, orientation="horizontal")
-    selected2
+    # # 2. horizontal menu
+    # selected2 = option_menu(None, ["Section 1", "Section 2"]) 
+    #     # icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    #     # menu_icon="cast", default_index=0, orientation="horizontal")
+    # selected2
+    
     if selected == "Section 1":
-        st.markdown("<script>document.querySelector('#section1').scrollIntoView();</script>", unsafe_allow_html=True)
+        st.markdown("<script>window.location.hash = '#section1'</script>", unsafe_allow_html=True)
     elif selected == "Section 2":  
-        st.markdown("<script>document.querySelector('#section2').scrollIntoView();</script>", unsafe_allow_html=True)  
+        st.markdown("<script>window.location.hash = '#section2'</script>", unsafe_allow_html=True)
 
-    if selected2 == "Section 1":
-        st.markdown("<script>document.querySelector('#section1').scrollIntoView();</script>", unsafe_allow_html=True)
-    elif selected2 == "Section 2":  
-        st.markdown("<script>document.querySelector('#section2').scrollIntoView();</script>", unsafe_allow_html=True)  
+    # if selected2 == "Section 1":
+    #     st.markdown("<script>document.querySelector('#section1').scrollIntoView();</script>", unsafe_allow_html=True)
+    # elif selected2 == "Section 2":  
+    #     st.markdown("<script>document.querySelector('#section2').scrollIntoView();</script>", unsafe_allow_html=True)  
 
     # Insert the image below the title
     image_path = "pics/top.jpg"
