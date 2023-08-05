@@ -86,9 +86,9 @@ def main():
         components.html("<a href='#section2'></a>", height=0)
 
     if selected2 == "Section 1":
-        components.html("<a href='#section1'></a>", height=0)
+        st.markdown("<a href='#section1'></a>", unsafe_allow_html=True) 
     elif selected2 == "Section 2":  
-        components.html("<a href='#section2'></a>", height=0)
+        st.markdown("<a href='#section2'></a>", unsafe_allow_html=True)
     
     # Insert the image below the title
     image_path = "pics/top.jpg"
