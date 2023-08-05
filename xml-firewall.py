@@ -124,16 +124,18 @@ def main():
 
     # Video URL or local file path
     video_url = "pics/sqli.mp4"  # Replace this with your video URL or local file path
-    st.video(video_url, caption="SQL Injection Example")
+    st.video(video_url)
 
     image_path = "pics/basic_terms3png.png"
     st.image(image_path, use_column_width=True)
-    
+    st.markdown("<h6 style='color: #ffffff; text-align: center;'>SQL Injection Example</h6>", unsafe_allow_html=True)
+
     # Video URL or local file path
     video_url = "pics/DDOS attack on the VideoLAN downloads infrastructure.mp4"  # Replace this with your video URL or local file path
     
     # Display the video
-    st.video(video_url, caption="DOS Example")
+    st.video(video_url)
+    st.markdown("<h6 style='color: #ffffff; text-align: center;'>DOS Example</h6>", unsafe_allow_html=True)
 
     image_path = "pics/basic_terms4.png"
     st.image(image_path, use_column_width=True)
