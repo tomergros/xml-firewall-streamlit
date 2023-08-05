@@ -216,7 +216,20 @@ def main():
     
     image_path = "pics/meet_the_team.jpg"
     st.image(image_path, use_column_width=True)
- 
+    
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Special Thanks:</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Our Academic Advisor: Dr. Guy Leshem</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Dr. Avi Yosipof</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Dr. Johnny Alon</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
+
+
     image_path = "pics/bottom.png"
     st.image(image_path, use_column_width=True)
 
