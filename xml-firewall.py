@@ -69,28 +69,6 @@ def main():
         unsafe_allow_html=True,
     )
 
-    # # 1. as sidebar menu
-    # with st.sidebar:
-    #     selected = option_menu("Section 1", "Section 2") 
-    #         # icons=['house', 'gear'], menu_icon="cast", default_index=1)
-    #     selected
-    
-    # 2. horizontal menu
-    selected = option_menu(None, ["Section 1", "Section 2"]) 
-        # icons=['house', 'cloud-upload', "list-task", 'gear'], 
-        # menu_icon="cast", default_index=0, orientation="horizontal")
-    selected
-    
-    if selected == "Section 1":
-        st.markdown("<a href='#section1'></a>", unsafe_allow_html=True)
-    elif selected == "Section 2":  
-        st.markdown("<a href='#section2'></a>", unsafe_allow_html=True)
-
-    # if selected2 == "Section 1":
-    #     st.markdown("<script>document.querySelector('#section1').scrollIntoView();</script>", unsafe_allow_html=True)
-    # elif selected2 == "Section 2":  
-    #     st.markdown("<script>document.querySelector('#section2').scrollIntoView();</script>", unsafe_allow_html=True)  
-
     # Insert the image below the title
     image_path = "pics/top.jpg"
     st.image(image_path, use_column_width=True)
@@ -114,14 +92,9 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
-    
-    st.markdown('<a id="section1"></a>', unsafe_allow_html=True)
-    st.title('Section 1')
 
     image_path = "pics/what_is_xml_firewall2.png"
     
-    st.markdown('<a id="section2"></a>', unsafe_allow_html=True)
-
     # Center the image using st.container
     col1, col2, col3 = st.columns(3)
     
