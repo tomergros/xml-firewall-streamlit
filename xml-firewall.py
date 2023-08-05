@@ -84,7 +84,10 @@ def main():
     st.image(image_path, use_column_width=True)
 
     image_path = "pics/what_is_xml_firewall2.png"
-    st.image(image_path, use_column_width=True)
+    # Display the image with custom size
+    width = 300  # Replace this with the desired width in pixels
+    height = 200  # Replace this with the desired height in pixels
+    st.image(image_path, width=width, height=height)
 
     image_path = "pics/purpose.png"
     st.image(image_path, use_column_width=True)
