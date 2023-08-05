@@ -69,12 +69,29 @@ def main():
     )
 
     # st.title("Kaggle Notebook Viewer and XML Firewall")
-    st.markdown("<h1 style='color: #ffffff; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color: #ffffff; text-align: center;'>XML Firewall Project</h1>", unsafe_allow_html=True)
 
     # Insert the image below the title
     image_path = "xml-firewall-logo.jpg"
     st.image(image_path, use_column_width=True)
 
+    # # Section 1
+    # st.markdown('<h2 style="text-align:center;">רקע</h2>', unsafe_allow_html=True)
+    
+    # background_text = """
+    # בשנים האחרונות פלטפורמת הרשתות החברתיות תפסה תאוצה וכיום היא תופסת מקום משמעותי בחיים של כמעט כל אחד מאיתנו. 
+    # הרשתות החברתיות מספקות דרך קלה ונוחה ליצירת קשר ושיתוף עם הסביבה שלנו וגם עם אנשים זרים מכל רחבי העולם. 
+    # למעשה, כיום התקשורת המרכזית עם הסביבה שלנו מנוהלת דרך הרשתות החברתיות.
+    
+    # עם זאת, ולמרות היתרונות שבדבר, קיים גם חיסרון לא מבוטל- בריונות. בריונות ברשת היא הטרדה או העלבת אדם על ידי שליחת הודעה, 
+    # פרסום פוסט, תמונה או סירטון בעלי אופי פוגע או מאיים. תופעה זו משפיעה על כל המשתמשים ברשתות. 
+    # ועלולה לגרום לנזק לבריאות הנפשית והפיזית של הקורבנות.
+    # """
+    
+    # st.markdown(f'<p style="text-align:center;" dir="rtl">{background_text}</p>', unsafe_allow_html=True)
+
+
+    
     # Replace the URL below with the URL you want to embed
     iframe_url = "https://www.kaggle.com/embed/tomergrossy/xml-firewall-cyber-attacks-classification"
     iframe_code = f'<iframe src="{iframe_url}" height="2000" style="margin: 0 auto; width: 100%; max-width: 2000px;" frameborder="0" scrolling="auto" title="XML- Firewall: Cyber Attacks Classification"></iframe>'
@@ -82,6 +99,7 @@ def main():
     # Kaggle Notebook Viewer
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>Kaggle Notebook Viewer</h1>", unsafe_allow_html=True)
     st.write(iframe_code, unsafe_allow_html=True)    
+
 
     # html_file_path = r"xml-firewall-cyber-attacks-classification.html"
     # try:
@@ -94,12 +112,16 @@ def main():
     #     st.error("An error occurred while loading the Kaggle notebook HTML content.")
 
     # XML Firewall
-    st.markdown('<h1 style="text-align: center; font-weight: bold; font-size: 48px;">Basic Instructions</h1>', unsafe_allow_html=True)
-    st.markdown('<div style="text-align: center; font-weight: bold;">1. Click on the arrow to start the app.</div>', unsafe_allow_html=True)
-    st.markdown('<div style="text-align: center; font-weight: bold;">2. Browse an XSD file.</div>', unsafe_allow_html=True)
-    st.markdown('<div style="text-align: center; font-weight: bold;">3. Browse an XML file.</div>', unsafe_allow_html=True)
-    st.markdown('<div style="text-align: center; font-weight: bold;">4. Click on \'Validate\'.</div>', unsafe_allow_html=True)
-    st.markdown('<div style="text-align: center; font-weight: bold;">That\'s it! You are ready to go!</div>', unsafe_allow_html=True)
+    
+    image_path = "pic/basic_instructions.jpg"
+    st.image(image_path, use_column_width=True) 
+    
+    # st.markdown('<h1 style="text-align: center; font-weight: bold; font-size: 48px;">Basic Instructions</h1>', unsafe_allow_html=True)
+    # st.markdown('<div style="text-align: center; font-weight: bold;">1. Click on the arrow to start the app.</div>', unsafe_allow_html=True)
+    # st.markdown('<div style="text-align: center; font-weight: bold;">2. Browse an XSD file.</div>', unsafe_allow_html=True)
+    # st.markdown('<div style="text-align: center; font-weight: bold;">3. Browse an XML file.</div>', unsafe_allow_html=True)
+    # st.markdown('<div style="text-align: center; font-weight: bold;">4. Click on \'Validate\'.</div>', unsafe_allow_html=True)
+    # st.markdown('<div style="text-align: center; font-weight: bold;">That\'s it! You are ready to go!</div>', unsafe_allow_html=True)
     
     # st.title("XML Firewall")
     st.markdown("<h1 style='color: #ffffff; text-align: center;'>XML Firewall</h1>", unsafe_allow_html=True)
