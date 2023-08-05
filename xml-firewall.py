@@ -68,11 +68,16 @@ def main():
         unsafe_allow_html=True,
     )
 
+    image_path = "xml-firewall-logo.jpg"
+    st.image(image_path, use_column_width=True)
+
     # st.title("Kaggle Notebook Viewer and XML Firewall")
     st.markdown("<h1 style='color: #ffffff; text-align: center;'>XML Firewall Project</h1>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Preseted by: Tomer Grossman & Oriel Somech</h5>", unsafe_allow_html=True)
+    st.markdown("<h6 style='color: #ffffff; text-align: center;'>Academic Advisor: Dr. Guy Leshem</h6>", unsafe_allow_html=True)
 
     # Insert the image below the title
-    image_path = "xml-firewall-logo.jpg"
+    image_path = "pics/top.jpg"
     st.image(image_path, use_column_width=True)
 
     # # Section 1
@@ -148,6 +153,11 @@ def main():
             except Exception as e:
                 st.error("An error occurred during XML validation: " + str(e))
 
+    image_path = "pics/meet_the_team.jpg"
+    st.image(image_path, use_column_width=True)
+ 
+    image_path = "pics/bottom.jpg"
+    st.image(image_path, use_column_width=True)
 
 if __name__ == "__main__":
     main()
