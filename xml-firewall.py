@@ -81,9 +81,9 @@ def main():
         # menu_icon="cast", default_index=0, orientation="horizontal")
     selected2
     if selected == "Section 1":
-        components.html("<a href='#section1'></a>", height=0)
+        st.markdown("<script>document.querySelector('#section1').scrollIntoView();</script>", unsafe_allow_html=True)
     elif selected == "Section 2":  
-        components.html("<a href='#section2'></a>", height=0)
+        st.markdown("<script>document.querySelector('#section2').scrollIntoView();</script>", unsafe_allow_html=True)  
 
     if selected2 == "Section 1":
         st.scroll_to(section1) 
@@ -114,11 +114,11 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
-    section1 = st.container()
+    st.markdown('<a id="section1"></a>', unsafe_allow_html=True)
 
     image_path = "pics/what_is_xml_firewall2.png"
     
-    section2 = st.container()
+    st.markdown('<a id="section2"></a>', unsafe_allow_html=True)
 
     # Center the image using st.container
     col1, col2, col3 = st.columns(3)
