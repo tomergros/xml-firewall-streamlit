@@ -74,14 +74,14 @@ def main():
     image_path = "xml-firewall-logo.jpg"
     st.image(image_path, use_column_width=True)
 
-    image_path = "pics/what_is_xml_firewall.png"
-    st.image(image_path, use_column_width=True)
     
-    # st.title("Kaggle Notebook Viewer and XML Firewall")
+    # st.title("XML Firewall Project")
     st.markdown("<h1 style='color: #ffffff; text-align: center;'>XML Firewall Project</h1>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Preseted by: Tomer Grossman & Oriel Somech</h5>", unsafe_allow_html=True)
     st.markdown("<h6 style='color: #ffffff; text-align: center;'>Academic Advisor: Dr. Guy Leshem</h6>", unsafe_allow_html=True)
 
+    image_path = "pics/what_is_xml_firewall.png"
+    st.image(image_path, use_column_width=True)
 
     # # Section 1
     # st.markdown('<h2 style="text-align:center;">רקע</h2>', unsafe_allow_html=True)
