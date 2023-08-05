@@ -132,7 +132,7 @@ def main():
     # st.markdown('<div style="text-align: center; font-weight: bold;">That\'s it! You are ready to go!</div>', unsafe_allow_html=True)
     
     # st.title("XML Firewall")
-    st.markdown("<h1 style='color: #ffffff; text-align: center;'>XML Firewall</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color: #ff6347; text-align: center;'>XML Firewall - Validation System</h1>", unsafe_allow_html=True)
 
     st.markdown("<p class='upload-title' style='text-align: center; font-size: 30px;'>Upload XSD File</p>", unsafe_allow_html=True)
     xsd_file = st.file_uploader("", type=["xsd"])
