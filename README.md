@@ -1,7 +1,7 @@
 # xml-firewall-streamlit
-Tomer Grossman and Oriel Somech final project
+**Tomer Grossman and Oriel Somech final project**
 
-Academic Advisor: Dr. Guy Leshem
+**Academic Advisor:** Dr. Guy Leshem
 
 
 
