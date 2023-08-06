@@ -1,6 +1,5 @@
-os
 torch
 transformers
-requests
 xmlschema==1.6.4
 streamlit-option-menu
+requests==2.26.0
