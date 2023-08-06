@@ -115,21 +115,6 @@ def main():
     image_path = "pics/purpose.png"
     st.image(image_path, use_column_width=True)
 
-    # # Section 1
-    # st.markdown('<h2 style="text-align:center;">רקע</h2>', unsafe_allow_html=True)
-    
-    # background_text = """
-    # בשנים האחרונות פלטפורמת הרשתות החברתיות תפסה תאוצה וכיום היא תופסת מקום משמעותי בחיים של כמעט כל אחד מאיתנו. 
-    # הרשתות החברתיות מספקות דרך קלה ונוחה ליצירת קשר ושיתוף עם הסביבה שלנו וגם עם אנשים זרים מכל רחבי העולם. 
-    # למעשה, כיום התקשורת המרכזית עם הסביבה שלנו מנוהלת דרך הרשתות החברתיות.
-    
-    # עם זאת, ולמרות היתרונות שבדבר, קיים גם חיסרון לא מבוטל- בריונות. בריונות ברשת היא הטרדה או העלבת אדם על ידי שליחת הודעה, 
-    # פרסום פוסט, תמונה או סירטון בעלי אופי פוגע או מאיים. תופעה זו משפיעה על כל המשתמשים ברשתות. 
-    # ועלולה לגרום לנזק לבריאות הנפשית והפיזית של הקורבנות.
-    # """
-    
-    # st.markdown(f'<p style="text-align:center;" dir="rtl">{background_text}</p>', unsafe_allow_html=True)
-
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -195,16 +180,6 @@ def main():
     st.write(iframe_code, unsafe_allow_html=True)    
 
 
-    # html_file_path = r"xml-firewall-cyber-attacks-classification.html"
-    # try:
-    #     with open(html_file_path, "r", encoding="utf-8") as file:
-    #         html_content = file.read()
-    #     st.components.v1.html(html_content, height=800, scrolling=True)
-    # except FileNotFoundError:
-    #     st.error("HTML file not found. Please provide the correct file path.")
-    # except Exception as e:
-    #     st.error("An error occurred while loading the Kaggle notebook HTML content.")
-
     # XML Firewall
     
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
@@ -217,13 +192,7 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
-    
-    # st.markdown('<h1 style="text-align: center; font-weight: bold; font-size: 48px;">Basic Instructions</h1>', unsafe_allow_html=True)
-    # st.markdown('<div style="text-align: center; font-weight: bold;">1. Click on the arrow to start the app.</div>', unsafe_allow_html=True)
-    # st.markdown('<div style="text-align: center; font-weight: bold;">2. Browse an XSD file.</div>', unsafe_allow_html=True)
-    # st.markdown('<div style="text-align: center; font-weight: bold;">3. Browse an XML file.</div>', unsafe_allow_html=True)
-    # st.markdown('<div style="text-align: center; font-weight: bold;">4. Click on \'Validate\'.</div>', unsafe_allow_html=True)
-    # st.markdown('<div style="text-align: center; font-weight: bold;">That\'s it! You are ready to go!</div>', unsafe_allow_html=True)
+
     
     # st.title("XML Firewall")
     st.markdown("<h1 style='color: #ff6347; text-align: center;'>XML Firewall - Validation System</h1>", unsafe_allow_html=True)
@@ -234,10 +203,8 @@ def main():
     st.markdown("<p class='upload-title' style='text-align: center; font-size: 30px;'>Upload XML File</p>", unsafe_allow_html=True)
     xml_file = st.file_uploader("", type=["xml"])
 
-    # st.markdown("<div class='center' style='text-align: center; font-size: 30px;'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
     
-    # Center the "Validate" button
-    # st.markdown("<div class='center'><button class='validate-button'>Validate</button></div>", unsafe_allow_html=True)
+    # "Validate" button
     if st.button("Validate", key="validate-button"):
         if not xsd_file or not xml_file:
             st.warning("Please upload both XSD and XML files.")
@@ -292,9 +259,9 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Special Thanks:</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'>Our Academic Advisor: Dr. Guy Leshem</h5>", unsafe_allow_html=True)
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Dr. Avi Yosipof</h5>", unsafe_allow_html=True)
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Dr. Johnny Alon</h5>", unsafe_allow_html=True)
-    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Emeritus Prof. Nathan Netanyahu</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Dept of Computer Science Dean: Dr. Avi Yosipof</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>NLP & Deep Learning Lecturer: Dr. Johnny Alon</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #ffffff; text-align: center;'>Head of the Computer Science Program: Prof. Emeritus Nathan Netanyahu</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
