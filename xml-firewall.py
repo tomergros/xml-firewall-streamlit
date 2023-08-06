@@ -44,7 +44,7 @@ def validate_xml(xsd_content, xml_content, classification_model):
                 logits = outputs.logits
                 predicted_class = torch.argmax(logits, dim=1).item()
                
-             st.info("XML is not valid.")
+            st.info("XML is not valid.")
             st.info(f"Predicted class: {predicted_class}")
 
     except Exception as r:
