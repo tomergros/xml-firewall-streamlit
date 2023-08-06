@@ -1,2 +1,4 @@
+torch
+transformers
 xmlschema==1.6.4
 streamlit-option-menu
