@@ -251,14 +251,14 @@ def main():
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
-    image_path = "pics/meet_the_team.jpg"
+    image_path = "pics/future_plans.png"
     st.image(image_path, use_column_width=True)
 
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
     
-    image_path = "pics/future_plans.png"
+    image_path = "pics/meet_the_team.jpg"
     st.image(image_path, use_column_width=True)
     
     st.markdown("<h5 style='color: #ffffff; text-align: center;'></h5>", unsafe_allow_html=True)
