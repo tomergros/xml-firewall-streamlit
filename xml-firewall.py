@@ -1,8 +1,29 @@
 import streamlit as st
 import xmlschema
+import torch
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from streamlit_option_menu import option_menu
+import requests
+import os
 
-def validate_xml(xsd_content, xml_content):
+def download_model_from_google_drive(file_id, output_path):
+    URL = f"https://drive.google.com/file/d/1bwGFOg1rmszKdQfCLVRXf00POTj1SPuO"
+    session = requests.Session()
+    response = session.get(URL, stream=True)
+    token = None
+    for key, value in response.cookies.items():
+        if key.startswith("download_warning"):
+            token = value
+            break
+    if token:
+        params = {"id": file_id, "confirm": token}
+        response = session.get(URL, params=params, stream=True)
+
+    with open(output_path, "wb") as f:
+        for chunk in response.iter_content(32768):
+            f.write(chunk)
+
+def validate_xml(xsd_content, xml_content, classification_model):
     try:
         xsd = xmlschema.XMLSchema(xsd_content)
         if xsd.is_valid(xml_content):
@@ -12,10 +33,39 @@ def validate_xml(xsd_content, xml_content):
                 xsd.validate(xml_content)
             except Exception as e:
                 st.error("XML is not valid: " + str(e))
+
+            # Tokenize the XML content for classification
+            tokenizer = AutoTokenizer.from_pretrained(extract_to)
+            inputs = tokenizer(xml_content, return_tensors="pt")
+
+            # Make predictions using the classification model
+            with torch.no_grad():
+                outputs = classification_model(**inputs)
+                logits = outputs.logits
+                predicted_class = torch.argmax(logits, dim=1).item()
+               
+             st.info("XML is not valid.")
+            st.info(f"Predicted class: {predicted_class}")
+
     except Exception as r:
         st.error("An error occurred during XML validation: " + str(r))
 
+
 def main():
+
+    output_dir = './saved_model'
+    # Google Drive file ID of the pytorch_model.bin
+    model_file_id = '1bwGFOg1rmszKdQfCLVRXf00POTj1SPuO'
+    extract_to = './extracted_model'
+    model_file_path = os.path.join(extract_to, 'pytorch_model.bin')
+
+    # Download the model from Google Drive
+    download_model_from_google_drive(model_file_id, model_file_path)
+
+    # Load the trained classification model and tokenizer
+    classification_model = AutoModelForSequenceClassification.from_pretrained(extract_to)
+
+
     st.set_page_config(
         page_title="xml-firewall",
         page_icon=":Rocket:",
@@ -212,8 +262,9 @@ def main():
             try:
                 xsd_content = xsd_file.read()
                 xml_content = xml_file.read()
-
-                validate_xml(xsd_content, xml_content)
+                
+                # Call the "validate_xml" function with the loaded classification model
+                validate_xml(xsd_content, xml_content, classification_model)
             except Exception as e:
                 st.error("An error occurred during XML validation: " + str(e))
     
