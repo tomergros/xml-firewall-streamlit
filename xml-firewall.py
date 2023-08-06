@@ -53,10 +53,10 @@ def validate_xml(xsd_content, xml_content, classification_model):
 
 def main():
 
-    output_dir = './saved_model'
+    output_dir = 'saved_model'
     # Google Drive file ID of the pytorch_model.bin
     model_file_id = '1bwGFOg1rmszKdQfCLVRXf00POTj1SPuO'
-    extract_to = './extracted_model'
+    extract_to = 'extracted_model'
     model_file_path = os.path.join(extract_to, 'pytorch_model.bin')
 
     # Download the model from Google Drive
